@@ -1,0 +1,97 @@
+# HailoHome Configuration
+# This file contains all configuration for the HailoHome system
+
+# System Configuration
+system:
+  name: "HailoHome"
+  version: "2.0.0"
+  debug: true
+  log_level: "INFO"
+  data_dir: "/home/pi/smart-assistant-data"
+
+# Hardware Configuration
+hardware:
+  hailo:
+    enabled: true
+    device_id: 0
+    model_path: "/opt/hailo/models"
+  camera:
+    enabled: true
+    device: 0
+    resolution: [1920, 1080]
+    fps: 30
+  audio:
+    input_device: "USB Audio Device"
+    output_device: "USB Audio Device"
+    sample_rate: 16000
+    channels: 1
+  zbt_dongle:
+    enabled: true
+    device_path: "/dev/ttyUSB0"
+
+# MQTT Configuration
+mqtt:
+  broker: "localhost"
+  port: 1883
+  username: ""
+  password: ""
+  topics:
+    voice_input: "assistant/voice/input"
+    voice_output: "assistant/voice/output"
+    vision_events: "assistant/vision/events"
+    device_control: "assistant/devices/control"
+    device_status: "assistant/devices/status"
+    memory_events: "assistant/memory/events"
+    system_status: "assistant/system/status"
+
+# AI Configuration
+ai:
+  llm:
+    model: "qwen2.5:3b-instruct-q4_K_M"
+    temperature: 0.7
+    max_tokens: 512
+    context_window: 4096
+  
+  voice:
+    wake_word: "hey assistant"
+    stt_model: "whisper"
+    tts_model: "piper"
+    tts_voice: "en_US-lessac-medium"
+  
+  vision:
+    object_detection: true
+    face_recognition: true
+    person_tracking: true
+    scene_understanding: true
+
+# Memory Configuration
+memory:
+  enabled: true
+  storage_type: "sqlite"
+  database_path: "/home/pi/smart-assistant-data/memory.db"
+  max_conversations: 1000
+  context_window: 10
+  learning_enabled: true
+
+# Home Assistant Integration
+home_assistant:
+  enabled: true
+  url: "http://localhost:8123"
+  token: ""
+  auto_discovery: true
+  update_interval: 30
+
+# Security Configuration
+security:
+  enable_encryption: true
+  api_key_required: false
+  max_request_rate: 100
+  allowed_ips: ["127.0.0.1", "192.168.1.0/24"]
+
+# Performance Configuration
+performance:
+  max_concurrent_requests: 5
+  request_timeout: 30
+  memory_limit: "2GB"
+  cpu_limit: "80%"
+  gpu_enabled: true

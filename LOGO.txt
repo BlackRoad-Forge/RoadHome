@@ -1,0 +1,39 @@
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                                                                              ║
+║  ██╗  ██╗ █████╗ ██╗██╗     ██╗      ██████╗ ██╗  ██╗ ██████╗ ███╗   ███╗███████╗ ║
+║  ██║  ██║██╔══██╗██║██║     ██║     ██╔═══██╗██║  ██║██╔═══██╗████╗ ████║██╔════╝ ║
+║  ███████║███████║██║██║     ██║     ██║   ██║███████║██║   ██║██╔████╔██║█████╗   ║
+║  ██╔══██║██╔══██║██║██║     ██║     ██║   ██║██╔══██║██║   ██║██║╚██╔╝██║██╔══╝   ║
+║  ██║  ██║██║  ██║██║███████╗███████╗╚██████╔╝██║  ██║╚██████╔╝██║ ╚═╝ ██║███████╗ ║
+║  ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝╚══════╝╚══════╝ ╚═════╝ ╚═╝  ╚═╝ ╚═════╝ ╚═╝     ╚═╝╚══════╝ ║
+║                                                                              ║
+║                    🏠 AI-Powered Smart Home Assistant 🏠                     ║
+║                                                                              ║
+║              Powered by Raspberry Pi 5 + Hailo 8 AI Accelerator             ║
+║                                                                              ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+🎯 Features:
+• Voice Control with Wake Word Detection
+• Computer Vision with Object & Face Recognition  
+• Smart Home Device Automation
+• Learning & Memory Capabilities
+• Complete Local Processing (Privacy-First)
+• Hailo AI Acceleration for Performance
+
+🚀 Quick Start:
+git clone <repository-url>
+cd HailoHome
+chmod +x setup_pi.sh
+./setup_pi.sh
+
+📖 Documentation:
+• README.md - Complete setup guide
+• DEPLOYMENT_GUIDE.md - Detailed deployment instructions
+• config.yaml - Configuration options
+
+🔧 Service Management:
+• Start: sudo systemctl start hailohome
+• Stop: sudo systemctl stop hailohome
+• Status: sudo systemctl status hailohome
+• Logs: journalctl -u hailohome -f

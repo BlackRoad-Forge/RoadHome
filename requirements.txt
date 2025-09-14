@@ -1,0 +1,41 @@
+# Smart Assistant Requirements
+# Core dependencies
+paho-mqtt>=1.6.1
+PyYAML>=6.0
+requests>=2.31.0
+numpy>=1.24.0
+opencv-python>=4.8.0
+
+# Voice processing
+sounddevice>=0.4.6
+pyaudio>=0.2.11
+whisper>=1.1.10
+pvporcupine>=3.0.0
+
+# AI and language processing
+langchain>=0.1.0
+langchain-community>=0.0.20
+langchain-ollama>=0.1.0
+langchainhub>=0.1.0
+ollama>=0.1.7
+
+# Computer vision
+picamera2>=0.3.12
+Pillow>=10.0.0
+
+# Database and storage
+sqlite3  # Built-in with Python
+
+# System monitoring
+psutil>=5.9.0
+
+# Development and testing
+pytest>=7.4.0
+pytest-asyncio>=0.21.0
+black>=23.0.0
+flake8>=6.0.0
+
+# Optional: Advanced features
+# tensorflow>=2.13.0  # For advanced ML models
+# torch>=2.0.0        # For PyTorch models
+# transformers>=4.30.0  # For Hugging Face models
