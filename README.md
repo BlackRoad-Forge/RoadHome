@@ -1,3 +1,20 @@
+# RoadHome
+
+> AI smart home — Pi 5 + Hailo-8, fully offline
+
+Part of the [BlackRoad OS](https://blackroad.io) ecosystem — 18 orgs, 20 domains, 200 agents.
+
+Forked from [`imvipgit/HailoHome`](https://github.com/imvipgit/HailoHome) and enhanced for the BlackRoad sovereign stack.
+
+| | |
+|---|---|
+| **Language** | Multiple |
+| **Organization** | [BlackRoad-Forge](https://github.com/BlackRoad-Forge) |
+| **License** | See upstream |
+| **Homepage** | [blackroad.io](https://blackroad.io) |
+
+---
+
 # HailoHome - AI-Powered Smart Home Assistant
 
 A comprehensive, AI-powered smart home assistant built for Raspberry Pi 5 with Hailo 8 AI accelerator, featuring voice recognition, computer vision, device control, and learning capabilities.
